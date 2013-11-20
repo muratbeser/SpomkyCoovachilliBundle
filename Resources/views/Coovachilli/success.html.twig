@@ -1,0 +1,30 @@
+{% extends 'SpomkyCoovachilliBundle::layout.html.twig' %}
+
+{% block title %}
+    {% trans %}title.success{% endtrans %}
+{% endblock title %}
+
+{% block content %}
+    <h2>Connexion réussie</h2>
+    <p>
+        Vous avez correctement été identifié et vous pouvez désormais naviguer sur internet.<br>
+        Vous avez initialement demandé à aller sur la page <a href="{{query.get("userurl")}}">{{query.get("userurl")}}</a>. Cliquez sur le lien pour y accéder directement.<br>
+        Vous pouvez fermer cette page, votre connexion restera active pendant toute la durée de votre session.
+    </p>
+    <p>
+        L'identifiant de votre session est {{query.get("sessionid")}}.
+    </p>
+    <p>
+        Pour mettre fin à cette session, <a href="http://{{query.get("uamip")}}:{{query.get("uamport")}}/logoff">cliquez ici</a>.
+    </p>
+    <script type="text/javascript">
+        var status_path = "{{path("spomky_wl_hotspot_status",{"id":id})}}";
+    </script>
+    {% javascripts
+    filter="yui_js"
+            output='js/success.js'
+            '@SpomkyWLHotspotUserBundle/Resources/private/js/success.js'
+    %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock content %}

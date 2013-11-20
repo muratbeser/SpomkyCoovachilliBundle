@@ -1,0 +1,27 @@
+spomky_coova_chilli_login:
+    path: /login
+    requirements:
+        _method: GET|POST
+    defaults:
+        _controller: SpomkyCoovachilliBundle:Coovachilli:login
+
+spomky_coova_chilli_status:
+    path: /status
+    requirements:
+        _method: GET
+    defaults:
+        _controller: SpomkyCoovachilliBundle:Coovachilli:status
+
+spomky_coova_chilli_logoff:
+    path: /logoff
+    requirements:
+        _method: GET
+    defaults:
+        _controller: SpomkyCoovachilliBundle:Coovachilli:logoff
+
+spomky_coova_chilli_success:
+    path: /success
+    requirements:
+        _method: GET
+    defaults:
+        _controller: SpomkyCoovachilliBundle:Coovachilli:success

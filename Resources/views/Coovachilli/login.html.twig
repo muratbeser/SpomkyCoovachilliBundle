@@ -1,0 +1,13 @@
+{% extends 'SpomkyCoovachilliBundle::layout.html.twig' %}
+
+{% block title %}
+    {% trans %}title.login{% endtrans %}
+{% endblock title %}
+
+{% block content %}
+    <form action="{{path("spomky_coovachilli_login")}}" method="post" {{ form_enctype(form) }} >
+        {{ form_render(form) }}
+        {{ form_rest(form) }}
+        <button type="submit">{% trans %}form.login{% endtrans %}</button>
+    </form>
+{% endblock content %}

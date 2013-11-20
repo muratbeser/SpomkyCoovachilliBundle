@@ -1,0 +1,4 @@
+# Form field labels
+form:
+    username: "Nom d'utilisateur :"
+    password: "Mot de passe :"
