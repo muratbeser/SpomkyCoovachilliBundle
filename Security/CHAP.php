@@ -22,8 +22,6 @@ class CHAP extends ChallengeCalculator
             urlencode($this->getCHAPResponse($password,$this->request->query->get("challenge"),$uamsecret)),
             urlencode($this->request->query->get("userurl"))
         );
-
-        return $target;
     }
 
     private function getCHAPResponse($pwd,$challenge,$uamsecret)
