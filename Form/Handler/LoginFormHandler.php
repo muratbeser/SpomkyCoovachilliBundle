@@ -5,7 +5,6 @@ namespace Spomky\CoovachilliBundle\Form\Handler;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Spomky\CoovachilliBundle\Form\Model\Login;
-use Spomky\CoovachilliBundle\Model\Uam;
 
 class LoginFormHandler
 {
@@ -43,8 +42,8 @@ class LoginFormHandler
         return false;
     }
 
-    public function getUri() {
-
+    public function getUri()
+    {
         return $this->uri;
     }
 

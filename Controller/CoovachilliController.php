@@ -4,22 +4,18 @@ namespace Spomky\CoovachilliBundle\Controller;
 
 use Symfony\Component\DependencyInjection\ContainerAware;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
-
-use Symfony\Component\HttpKernel\Exception\HttpException;
 
 use Spomky\CoovachilliBundle\Form\Handler\LoginFormHandler;
 use Spomky\CoovachilliBundle\Form\Type\LoginFormType;
 
-
-class CoovachilliController extends ContainerAware {
+class CoovachilliController extends ContainerAware
+{
     /**
      * Login page
      * @template()
      */
-    public function loginAction() {
-
+    public function loginAction()
+    {
         $form = new LoginFormType;
         $handler = new LoginFormHandler(
             $form,
@@ -29,8 +25,7 @@ class CoovachilliController extends ContainerAware {
         );
 
         $result = $handler->process();
-        if( $result !== false ) {
-
+        if ($result !== false) {
             return $this->redirect($result);
         }
 
@@ -38,30 +33,30 @@ class CoovachilliController extends ContainerAware {
             "form" => $form->createView(),
         );
     }
-    
+
     /**
      * Status page
      * @template()
      */
-    public function statusAction() {
-        
+    public function statusAction()
+    {
         return array();
     }
-    
+
     /**
      * Success page
      * @template()
      */
-    public function successAction() {
-        
+    public function successAction()
+    {
         return array();
     }
-    
+
     /**
      * Logoff process
      */
-    public function logoffAction() {
-
+    public function logoffAction()
+    {
         return array();
     }
 }

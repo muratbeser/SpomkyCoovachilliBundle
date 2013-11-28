@@ -2,31 +2,32 @@
 
 namespace Spomky\CoovachilliBundle\Form\Model;
 
-class Login {
-    
+class Login
+{
     protected $username;
     protected $password;
 
-
-    public function getUsername() {
-
+    public function getUsername()
+    {
         return $this->username;
     }
 
-    public function setUsername($username) {
-
+    public function setUsername($username)
+    {
         $this->username = $username;
-        return $this
+
+        return $this;
     }
 
-    public function getPassword() {
-
+    public function getPassword()
+    {
         return $this->password;
     }
 
-    public function setPassword($password) {
-
+    public function setPassword($password)
+    {
         $this->password = $password;
-        return $this
+
+        return $this;
     }
 }
