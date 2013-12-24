@@ -11,6 +11,15 @@ use Spomky\CoovachilliBundle\Form\Type\LoginFormType;
 class CoovachilliController extends Controller
 {
     /**
+     * Index page
+     * @template()
+     */
+    public function indexAction()
+    {
+        return array();
+    }
+
+    /**
      * Login page
      * @template()
      */
@@ -20,8 +29,8 @@ class CoovachilliController extends Controller
         $handler = new LoginFormHandler(
             $form,
             $this->get('request'),
-            $this->getParameter('spomky_coovachilli.uam.secret'),
-            $this->getParameter('spomky_coovachilli.uam.method')
+            $this->container->getParameter('spomky_coovachilli.uam.secret'),
+            $this->container->getParameter('spomky_coovachilli.uam.method')
         );
 
         $result = $handler->process();

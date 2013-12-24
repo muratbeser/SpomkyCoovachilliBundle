@@ -1,3 +1,10 @@
+spomky_coova_chilli_index:
+    path: /
+    requirements:
+        _method: GET
+    defaults:
+        _controller: SpomkyCoovachilliBundle:Coovachilli:index
+
 spomky_coova_chilli_login:
     path: /login
     requirements:
