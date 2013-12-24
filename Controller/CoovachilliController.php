@@ -2,13 +2,13 @@
 
 namespace Spomky\CoovachilliBundle\Controller;
 
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 use Spomky\CoovachilliBundle\Form\Handler\LoginFormHandler;
 use Spomky\CoovachilliBundle\Form\Type\LoginFormType;
 
-class CoovachilliController extends ContainerAware
+class CoovachilliController extends Controller
 {
     /**
      * Login page
