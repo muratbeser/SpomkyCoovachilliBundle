@@ -6,3 +6,5 @@ Coovachilli Bundle
 [![Code Coverage](https://scrutinizer-ci.com/g/Spomky/SpomkyCoovachilliBundle/badges/coverage.png?s=da9c30fdc8dc7d4eedcf6411679464562f614bea)](https://scrutinizer-ci.com/g/Spomky/SpomkyCoovachilliBundle/)
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b78055d1-dcb2-465b-a5e2-86b6dc7e163c/big.png)](https://insight.sensiolabs.com/projects/b78055d1-dcb2-465b-a5e2-86b6dc7e163c)
+
+[![Dependency Status](https://www.versioneye.com/user/projects/52caa839ec1375078b00026b/badge.png)](https://www.versioneye.com/user/projects/52caa839ec1375078b00026b)
