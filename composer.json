@@ -1,5 +1,5 @@
 {
-    "name": "spomky/coovachilli-bundle",
+    "name": "spomky-labs/coovachilli-bundle",
     "type": "symfony-bundle",
     "description": "Symfony2 Coovachilli Bundle",
     "keywords": ["symfony2", "bundle", "coovachilli"],
