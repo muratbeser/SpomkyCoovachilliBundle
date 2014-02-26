@@ -8,3 +8,5 @@ Coovachilli Bundle
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/b78055d1-dcb2-465b-a5e2-86b6dc7e163c/big.png)](https://insight.sensiolabs.com/projects/b78055d1-dcb2-465b-a5e2-86b6dc7e163c)
 
 [![Dependency Status](https://www.versioneye.com/user/projects/530b13a8ec1375e93b00000d/badge.png)](https://www.versioneye.com/user/projects/530b13a8ec1375e93b00000d)
+
+[![Latest Stable Version](https://poser.pugx.org/spomky-labs/coovachilli-bundle/v/stable.png)](https://packagist.org/packages/spomky-labs/coovachilli-bundle) [![Total Downloads](https://poser.pugx.org/spomky-labs/coovachilli-bundle/downloads.png)](https://packagist.org/packages/spomky-labs/coovachilli-bundle) [![Latest Unstable Version](https://poser.pugx.org/spomky-labs/coovachilli-bundle/v/unstable.png)](https://packagist.org/packages/spomky-labs/coovachilli-bundle) [![License](https://poser.pugx.org/spomky-labs/coovachilli-bundle/license.png)](https://packagist.org/packages/spomky-labs/coovachilli-bundle)
